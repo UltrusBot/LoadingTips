@@ -8,7 +8,7 @@ modmenu = "11.0.1"
 
 fabric_loom = "1.7-SNAPSHOT"
 loom_quiltflower = "1.6.0"
-publishing = "0.4.5"
+publishing = "0.6.2"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }

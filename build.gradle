@@ -46,7 +46,7 @@ publishMods {
     curseforge {
         projectId = "527804"
         minecraftVersions.addAll("1.20.3", "1.20.4")
-        accessToken = providers.environmentVariable("CF_API_KEY")
+        accessToken = providers.gradleProperty("CF_API_KEY")
         embeds {
             slug = "midnightlib"
         }
@@ -54,7 +54,7 @@ publishMods {
     modrinth {
         projectId = "9iE55lp5"
         minecraftVersions.addAll("1.20.3", "1.20.4")
-        accessToken = providers.environmentVariable("MODRINTH_TOKEN")
+        accessToken = providers.gradleProperty("MODRINTH_TOKEN")
         embeds {
             slug = "midnightlib"
         }
@@ -62,7 +62,7 @@ publishMods {
     github {
         repository = "UltrusBot/LoadingScreenTips"
         commitish = "1.20"
-        accessToken = providers.environmentVariable("GH_TOKEN")
+        accessToken = providers.gradleProperty("GH_TOKEN")
     }
 
     dryRun = false
