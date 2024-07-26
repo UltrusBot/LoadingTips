@@ -29,7 +29,7 @@ repositories {
 
 dependencies {
     minecraft(libs.minecraft)
-    mappings(variantOf(libs.quilt.mappings) { classifier("intermediary-v2") })
+    mappings(libs.yarn)
     modImplementation(libs.fabric.loader)
     modImplementation(libs.fabric.api)
     modImplementation(libs.midnightlib)
@@ -82,7 +82,7 @@ jar {
 }
 
 tasks.withType(JavaCompile).configureEach {
-    it.options.release = 17
+    it.options.release = 21
 }
 
 

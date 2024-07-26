@@ -4,10 +4,10 @@ import me.ultrusmods.loadingscreentips.LoadingScreenTips;
 import me.ultrusmods.loadingscreentips.TipShowingScreen;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.gui.WorldGenerationProgressTracker;
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.screen.WorldLoadingScreen;
+import net.minecraft.client.gui.screen.world.LevelLoadingScreen;
+import net.minecraft.server.WorldGenerationProgressTracker;
 import net.minecraft.text.Text;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -17,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 //TODO: Rewrite this
 
 @Environment(EnvType.CLIENT)
-@Mixin(WorldLoadingScreen.class)
+@Mixin(LevelLoadingScreen.class)
 public abstract class LevelLoadingScreenMixin extends Screen implements TipShowingScreen {
 
     protected LevelLoadingScreenMixin(Text text) {
@@ -33,7 +33,7 @@ public abstract class LevelLoadingScreenMixin extends Screen implements TipShowi
     }
 
     @Inject(method = "render", at = @At("TAIL"))
-    void drawLoadingTip(GuiGraphics graphics, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+    void drawLoadingTip(DrawContext graphics, int mouseX, int mouseY, float delta, CallbackInfo ci) {
         drawLoadingTips(textRenderer, graphics, width, height, delta);
     }
 

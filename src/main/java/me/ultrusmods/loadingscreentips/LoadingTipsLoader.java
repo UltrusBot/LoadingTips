@@ -19,7 +19,7 @@ public class LoadingTipsLoader extends JsonDataLoader implements IdentifiableRes
 
     @Override
     public Identifier getFabricId() {
-        return new Identifier(LoadingScreenTips.MOD_ID, "loading_tips");
+        return Identifier.of(LoadingScreenTips.MOD_ID, "loading_tips");
     }
 
     @Override

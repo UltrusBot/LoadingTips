@@ -102,6 +102,22 @@
     "text.loadingscreentips.charged_creeper_heads",
     "text.loadingscreentips.copy_template",
     "text.loadingscreentips.decorated_pots_items",
-    "text.loadingscreentips.break_decorated_pots"
+    "text.loadingscreentips.break_decorated_pots",
+    "text.loadingscreentips.ominous_bottle",
+    "text.loadingscreentips.cartographers",
+    "text.loadingscreentips.mace",
+    "text.loadingscreentips.copper_bulb",
+    "text.loadingscreentips.bad_omen_levels",
+    "text.loadingscreentips.armadillo_scute",
+    "text.loadingscreentips.bogged",
+    "text.loadingscreentips.wolf_armor",
+    "text.loadingscreentips.wind_charge",
+    "text.loadingscreentips.trial_keys",
+    "text.loadingscreentips.trial_spawners",
+    "text.loadingscreentips.breeze_deflect",
+    "text.loadingscreentips.mace_wither",
+    "text.loadingscreentips.mace_falldamage",
+    "text.loadingscreentips.breeze_projectile",
+    "text.loadingscreentips.trial_spawner_blocks"
   ]
 }
