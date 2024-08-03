@@ -1,1 +1,1 @@
-- Fix bug where replace was broken
+- Added Traditional Chinese (zh_tw.json) Thanks @yichifauzi
